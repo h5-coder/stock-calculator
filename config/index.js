@@ -2,7 +2,7 @@
 var path = require('path')
 
 module.exports = {
-    build: {      
+    build: {
         env: require('./prod.env'),
         index: path.resolve(__dirname, '../dist/index.html'),
         assetsRoot: path.resolve(__dirname, '../dist'),
@@ -15,12 +15,12 @@ module.exports = {
     },
     dev: {
         env: require('./dev.env'),
-        port: 8088,
+        port: 8888,
         autoOpenBrowser: true,
         assetsSubDirectory: 'static',
         assetsPublicPath: '/',
         proxyTable: {},
         cssSourceMap: false,
-        useEslint:true,//Eslint开关
+        useEslint: true,//Eslint开关
     }
 }
